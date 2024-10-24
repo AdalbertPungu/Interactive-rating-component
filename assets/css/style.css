@@ -1,0 +1,144 @@
+*, 
+*::before, 
+*::after { 
+  box-sizing: border-box; 
+}
+
+:root {
+  /* Colors Primary */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+
+  /* Typography Body (paragraph) */
+
+  --Font-size: 15px;
+
+  /* Font */
+
+  --font-family: "Overpass", sans-serif;
+  --Weight-400: 400;
+  --Weight-700: 700;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+
+main.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  width: 50vh;
+  border-radius: 10px;
+  background-color: var(--DarkBlue);
+}
+
+svg.icon__star{
+  background-color: hsl(217, 21%, 21%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 16.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5rem;
+  color: var(--White);
+}
+
+p.rating__description {
+  color: var(--LightGrey);
+  font-size: 0.9rem;
+}
+
+.rating__button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+button.rating {
+  background-color: hsl(217, 21%, 21%);
+  cursor: pointer;
+  color: var(--LightGrey);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 12px;
+  margin: 0 20px 20px 0;
+}
+
+button.rating.selected {
+  background-color: var(--White);
+  color: black;
+}
+
+.rating__button button:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rating__submit {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card__thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 50vh;
+  border-radius: 10px;
+  background-color: var(--DarkBlue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rating__value-pragraph {
+  width: 60%;
+  text-align: center;
+  background-color: hsl(215, 20%, 25%);
+  border-radius: 40px;
+  padding: 5px;
+  font-size: 1rem;
+  color: var(--Orange);
+}
+
+.thank-you__description {
+  width: 100%;
+  color: var(--LightGrey);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
