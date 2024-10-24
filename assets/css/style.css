@@ -35,7 +35,6 @@ body {
 
 main.rating {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -46,7 +45,7 @@ main.rating {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem;
+  padding: 20px;
   width: 50vh;
   border-radius: 10px;
   background-color: var(--DarkBlue);
@@ -67,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p.rating__description {
   color: var(--LightGrey);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .rating__button {
@@ -138,6 +137,22 @@ button.rating.selected {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 375px) {
+  .card__rating {
+    width: 80vw;
+  }
+
+  .card__rating, .card__thank-you {
+    padding: 10px;
+  }
+
+  button.rating {
+    width: 100%;
+    padding: 20px;
+    margin: 0 3px 20px 0;
+  }
 }
 
 .attribution { font-size: 11px; text-align: center; }
